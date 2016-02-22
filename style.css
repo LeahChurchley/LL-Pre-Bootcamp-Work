@@ -1,0 +1,377 @@
+/* reset browser styles */
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1.2;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ol {
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+/* end reset browser styles */
+
+header:after,
+figure:after,
+footer:after,
+section:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+	margin: 0 auto;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #FF7E6C;
+}
+
+h1 {
+	font-family: 'Homemade Apple', cursive;
+	font-size: 3em;
+}
+
+h2 {
+	font-family: 'Homemade Apple', cursive;
+	font-size: 2em;
+}
+
+h3,
+h4 {
+	font-family: 'Homemade Apple', cursive;
+	font-size: 1.5em;
+}
+
+.ingredients,
+.instructions,
+.endingSection {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 40px;
+}
+
+.pic {
+	height: 250px;
+	width:250px;
+	border-radius: 25px;
+}
+
+/* Header */
+
+header {
+	text-align: center;
+	margin: auto;
+	background-color: #9AD1B9;
+	padding: 18px;
+}
+
+header h1 {
+	margin: 25px;
+}
+
+header p {
+	text-align: center;
+	font-weight: bold;
+}
+
+/* Ingredients */
+
+.ingredients,
+.instructions,
+.endingSection {
+	max-width: 1000px;
+	background-color: #FF7E6C;
+}
+
+.ingredients ul {
+	margin-bottom: 20px;
+}
+
+.listIngredients p {
+	max-width: 550px;
+}
+
+.ingredients {
+	margin-top: 0;
+}
+
+/* Instructions */
+
+.instructions {
+	max-width: 1000px;
+	padding: 20px;
+}
+
+/* Ending Section */
+
+.endingSection {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.endingSection h2 {
+	padding: 20px;
+}
+
+.center {
+	text-align: center;
+	border-radius: 120px;
+}
+
+/* Footer */
+
+footer {
+	background-color: #9AD1B9;
+	margin: auto;
+	padding: 30px;
+}
+
+footer .originalLink {
+	float: left;
+	font-size: 1.1em;
+	margin: auto;
+}
+
+footer h3 {
+	float: right;
+	font-size: 0.9em;
+	display: inline-block;
+	margin: auto;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+}
+
+footer a:hover {
+	color: #FF7E6C;
+	transition-duration: 2s;
+}
+
+/* Media Queries */
+
+@media (max-width: 414px){
+
+	body {
+		display: block;
+		margin: 0 auto;
+	}
+
+	h3 {
+		font-size: 1.2em;
+	}
+
+	header {
+		text-align: center;
+		padding: 10px;
+	}
+
+	header h1 {
+		font-size: 2em;
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	figure {
+		text-align: center;
+		padding: 0;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	footer h3 {
+		float: none;
+	}
+
+	.mainintro {
+		font-size: 1em;
+	}
+
+	.listIngredients {
+		padding-bottom: 15px;
+	}
+
+	.instructions {
+		float: left;
+	}
+
+	.directions {
+		float: left;
+		padding: 15px 0 0 0;
+	}
+
+	.originalLink {
+		padding-bottom: 10px;
+	}
+
+}
+
+@media (min-width: 415px) {
+
+	.right,
+	.left {
+		box-shadow: -10px 10px 5px #9AD1B9;
+	}
+
+	.ingredients img {
+		float: right;
+		display: inline-block;
+	}
+
+	.listIngredients {
+		display: inline-block;
+	}
+
+	figure {
+		display: inline-block;
+		padding: 10px;
+	}
+
+	.left {
+		display: inline-block;
+	}
+
+	.directions {
+		display: inline-block;
+		padding-left: 50px;
+	}
+
+
+}
+
+
+
+
