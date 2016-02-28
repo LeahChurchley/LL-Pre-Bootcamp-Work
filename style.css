@@ -183,6 +183,16 @@ h4 {
 	border-radius: 25px;
 }
 
+/* For Jquery: crosses out ingredients/directions */
+.done {
+	text-decoration: line-through;
+}
+
+.fade {
+	opacity: 0;
+	transition: opacity 2s;
+}
+
 /* Header */
 
 header {
